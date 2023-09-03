@@ -1,5 +1,5 @@
 
-# Git basics
+# Git Basics
 
 Here are some of the most common commands for Git. Try creating a test repository and use the commands to get a feel for how the work.
 
