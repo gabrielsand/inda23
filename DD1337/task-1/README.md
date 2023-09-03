@@ -1,4 +1,4 @@
-# Exercise 1
+# Task 1: Java Basics
 
 In this exercise you should implement the methods in the classes, in the following order:
 
