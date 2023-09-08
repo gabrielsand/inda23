@@ -2,6 +2,8 @@
 
 **⚠️ This is not the official INDA repo ⚠️**
 
+![image](imgs/welcome.jpg)
+
 ### About This Repo
 
 Welcome to Örn's INDA course repo! Here you will find material for all the courses we will go through during your first year at KTH. 
