@@ -39,6 +39,7 @@ Helt enkelt genom att läsa dokumentationen. Ni hittar lättast genom att google
 Den här veckan kommer ni att få arbeta med JShell, ett interaktivt program för att testa Java-kod. Det kan vara smidigt att använda när du bara vill testa en kodsnutt och inte orkar skriva en hel klass.
 
 1. Gå in och skumma igenom dokumentationen för [JShell](https://docs.oracle.com/en/java/javase/20/jshell/introduction-jshell.html#GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8).
+1. Öppna terminalen och starta JSell med kommandot `jshell` (borde finnas installerat, säg till annars)
 1. Testa att utvärdera `boolean`-uttrycken i veckans task om ni inte redan har gjort det.
 1. Gör er egen definition av absolutbeloppsfunktionen (se definitionen ovan).
 
