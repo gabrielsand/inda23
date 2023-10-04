@@ -56,9 +56,9 @@ Ta några minuter och diskutera som ni sitter:
 
 Veckans uppgift är tänkt att ge en djupare förståelse för `String`-typen genom att jobba med arrays.
 
-Inom datavetenskapen är en sträng en sekvens av symboler. Den representeras ofta som en lista. Till exempel kan strängen $\text{"DD1337"}$ ses som listan $\{\text{D, D, 1, 3, 3, 7} \}$. Ni ska nu implementera en Java-klass som representerar strängar på detta sätt.
+Inom datavetenskapen är en sträng en sekvens av symboler. Den representeras ofta som en lista. Till exempel kan strängen $\text{"DD1337"}$ ses som listan $\lbrace\text{D, D, 1, 3, 3, 7} \rbrace$. Ni ska nu implementera en Java-klass som representerar strängar på detta sätt.
 
-> OBS: här syftar $\{\}$-notationen på en *lista* (som är ordnad och kan ha upprepade element), och inte på en *mängd* (som inte är ordnad och som har unika element).
+> OBS: här syftar $\lbrace\rbrace$-notationen på en *lista* (som är ordnad och kan ha upprepade element), och inte på en *mängd* (som inte är ordnad och som har unika element)..
 
 **Uppgift**
 
