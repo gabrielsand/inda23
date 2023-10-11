@@ -1,4 +1,4 @@
-# Övning 6 - 
+# Övning 6
 
 ### **Vad pratade vi om förra veckan?**
 * Kodkvalitet
@@ -16,31 +16,36 @@ Ta några minuter och diskutera som ni sitter:
 
 ---
 
-### **Gissa spelet**
+### **Kodningsuppgift: "gissa talet"-spel**
 
 **Bakgrund**
 
-Denna veckas uppgift introducerar koncepten *användarinput* och *spelloopar*. Genom att interagera med användaren kan vi skapa dynamiska program som reagerar på användarens beslut. En spelloop tillåter programmet att köra upprepade gånger tills ett specifikt villkor är uppfyllt.
+För att våra program ska kunna göra någon nytta i praktiken måste de kunna ta emot information från världen utanför. I den här uppgiften kommer ni att få göra just det, genom att läsa input från en användare. Ni kommer sedan kombinera det med vad ni redan har lärt er för att skapa ett spel där datorn "tänker" på ett tal mellan 1 och 100 och spelaren ska försöka gissa sig fram till vilket tal det är.
 
-Den här veckan är det [parprogrammering](https://sv.wikipedia.org/wiki/Parprogrammering) som gäller, så ni ska jobba i par där en kodar och en vägleder.
+> För den här uppgiften är det [parprogrammering](https://sv.wikipedia.org/wiki/Parprogrammering) som gäller. Ni ska alltså jobba i par, där en kodar och en vägleder.
 
 **Förberedelse**
 
-Innan ni börjar med huvuduppgiften, ta en titt på `UserInputDemo.java` och `SimpleGameLoopDemo.java` för att förstå grunderna om användarinput och spelloopar.
+För att kunna implementera spelet behöver ni kunna göra följande:
+
+1. Slumpmässigt generera det tal som ska gissas
+1. Ta emot en gissningar från användaren
+1. Få programmet att fortsätta köra (och ge ledtrådar) tills spelaren har gissat rätt
+
+Slumpmässiga tal kan genereras med `Random`-klassen som ni känner till. För att läsa input kan ni använda Javas [`Scanner`](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)-klass och dess `nextInt()`-metod. Slutligen, för att få programmet att köra tills spelaren har gissat rätt kan ni använda en `while`-loop och en `boolean`-variabel `hasGuessedCorrectly`, som är `false` från början (det här är ett exempel på en [*spel-loop*](https://en.wikipedia.org/wiki/Video_game_programming#Game_structure)).
+
+För att göra saker lite tydligare finns två exempel ni kan kika på:
 
 - I [`UserInputDemo.java`](./UserInputDemo.java) lär ni er hur man kan ta emot och använda information från användaren.
-- I [`SimpleGameLoopDemo.java`](./SimpleGameLoopDemo.java) introduceras ni till idén om en loop där ett program fortsätter tills användaren har uppnått ett visst mål.
+- I [`SimpleGameLoopDemo.java`](./SimpleGameLoopDemo.java) finns ett exempel på en spel-loop kan se ut.
+
+Sen är det dags att skapa själva spelet!
 
 **Uppgift**
 
-Efter att ha förstått ovanstående demos, är det dags att skapa ett "Gissa talet"-spel. Spelet kommer att slumpmässigt välja ett tal mellan 1 och 100. Användarens mål är att gissa vilket tal det är. Efter varje gissning kommer spelet att berätta om det korrekta talet är högre, lägre eller om användaren har gissat rätt.
+Spelet kommer att slumpmässigt välja ett tal mellan 1 och 100. Användarens mål är att gissa vilket tal det är. Efter varje gissning kommer spelet att berätta om det korrekta talet är högre eller lägre. Om användaren har gissat rätt.
 
-- Skapa en klass `GuessingGame.java`.
-- Inom denna klass, använd `java.util.Random` för att generera ett slumpmässigt tal mellan 1 och 100.
-- Använd en `while`-loop för att hålla spelet igång tills användaren har gissat rätt.
-- Efter varje gissning, ge feedback till användaren om de borde gissa högre, lägre, eller om de har gissat rätt.
-
-Exempel på en körning av spelet:
+Exempel på en körning av spelet där talet som ska gissas råkar vara 63:
 
 ```bash
 javac GuessingGame.java
